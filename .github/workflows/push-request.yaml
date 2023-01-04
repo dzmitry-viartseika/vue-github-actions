@@ -1,7 +1,6 @@
-name: Pull Request Workflow
+name: Push Request Workflow
 
-on:
-  pull_request:
+on: push
 
 jobs:
   pr-checks:
