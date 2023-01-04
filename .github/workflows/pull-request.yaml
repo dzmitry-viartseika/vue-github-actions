@@ -1,0 +1,18 @@
+name: Pull Request Workflow
+
+on:
+  pull_request:
+
+jobs:
+  pr-checks:
+    name: PR Checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Out
+        uses: actions/checkout@v3
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
+        run: npm run test
