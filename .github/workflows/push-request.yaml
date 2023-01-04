@@ -14,7 +14,7 @@ jobs:
         run: npm install
 
       - name: Lint
-        run: vue-cli-service lint
+        run: npm run lint
 
       - name: Test
-        run: vue-cli-service test:unit
+        run: npm run test:unit
