@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install deps
-        uses: npm install
+        run: npm install
 
       - name: Lint
         run: vue-cli-service lint
