@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Lint
-        run: npm run lint
+        run: vue-cli-service lint
 
       - name: Test
-        run: npm run test
+        run: vue-cli-service test:unit
