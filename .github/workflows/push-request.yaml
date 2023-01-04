@@ -10,6 +10,9 @@ jobs:
       - name: Check Out
         uses: actions/checkout@v3
 
+      - name: Install deps
+        uses: npm install
+
       - name: Lint
         run: vue-cli-service lint
 
