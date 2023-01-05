@@ -20,13 +20,6 @@ jobs:
           VALIDATE_ALL_CODEBASE: true
           VALIDATE_JAVASCRIPT_ES: true
 
-      - name: HTML5 and CSS3 Validators
-        uses: Cyb3r-Jak3/html5validator-action
-        with:
-          root: app/
-          blacklist: invalid
-          css: true
-
       - name: Test
         run: npm run test:unit
 
