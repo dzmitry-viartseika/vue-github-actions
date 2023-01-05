@@ -23,6 +23,10 @@
   position: text;
 }
 
+.test2 {
+  color: '',
+}
+
 nav {
   padding: 30px;
 
