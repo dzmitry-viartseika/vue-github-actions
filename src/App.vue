@@ -20,6 +20,7 @@
 .test {
   display: block;
   display: flex;
+  position: text;
 }
 
 nav {

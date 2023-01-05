@@ -14,6 +14,13 @@ jobs:
       - name: Install deps
         run: npm install
 
+      - name: Lint Code Base
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_JAVASCRIPT_ES: true
+          VALIDATE_CSS: true
+
       - name: Test
         run: npm run test:unit
 
