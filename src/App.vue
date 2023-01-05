@@ -17,6 +17,11 @@
   color: #2c3e50;
 }
 
+.test {
+  display: block;
+  display: flex;
+}
+
 nav {
   padding: 30px;
 
