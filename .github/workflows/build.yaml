@@ -22,5 +22,5 @@ jobs:
       - name: Get Build Project
         uses: actions/download-artifact@v3
         with:
-          name: build-files
+          name: public
 
