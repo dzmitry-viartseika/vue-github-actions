@@ -16,7 +16,7 @@ jobs:
           path: build
           name: build-files
   deploy:
-    needs: build
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - name: Get Build Project
