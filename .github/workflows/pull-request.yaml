@@ -11,17 +11,17 @@ jobs:
       - name: Check Out
         uses: actions/checkout@v3
 
-      - name: Install deps
+      - name: NPM Install
         run: npm install
 
-      - name: Lint Code Base
+      - name: Check Super Linter
         uses: github/super-linter@v4
         env:
           VALIDATE_ALL_CODEBASE: true
           VALIDATE_JAVASCRIPT_ES: true
 
-      - name: Test
-        run: npm run test:unit
-
       - name: Lint
         run: npm run lint
+
+      - name: Test
+        run: npm run test:unit
